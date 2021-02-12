@@ -11,6 +11,7 @@ function Navicelle() {
           if (data){
             setSpaceData(data);
           }
+          
         }
         loadData()
     },[])
