@@ -34,8 +34,10 @@ function Navicelle() {
     },[])
     
     return(
-        <div>
+        <div className="container">
             <h2>Navicelle <em>(capsule)</em></h2>
+            <br />
+            <p>QUi ce piazzo un bottone che schiaccio e farà qualcosa...</p>
             
             {spaceData?.map((item: Capsule) => 
                 <div key={item.capsule_serial}><strong>{item.capsule_serial}:</strong> {item.details}
