@@ -4,7 +4,7 @@ import { Nav } from "reactstrap";
 import logo from './logo.svg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDatabase, faHome, faSpaceShuttle } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase, faHome, faSpaceShuttle, faUser } from '@fortawesome/free-solid-svg-icons'
 
 
 function Navbar() {
@@ -15,8 +15,9 @@ function Navbar() {
 
       <Nav>
         <Link to="/home"><FontAwesomeIcon icon={faHome} /> Home</Link>&nbsp;&nbsp; 
-        <Link to="/navicelle"><FontAwesomeIcon icon={faSpaceShuttle} /> Navicelle</Link>&nbsp;&nbsp;
-        <Link to="/missioni"><FontAwesomeIcon icon={faDatabase} /> Missioni</Link> 
+        <Link to="/navicelle"><FontAwesomeIcon icon={faSpaceShuttle} className="fa-rotate-270" /> Navicelle</Link>&nbsp;&nbsp;
+        <Link to="/missioni"><FontAwesomeIcon icon={faDatabase} /> Missioni</Link> &nbsp;&nbsp;
+        <a href="http://fabrizioquercia.it" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faUser} /> Chi Sono!</a>
       </Nav>
       
     </div>
