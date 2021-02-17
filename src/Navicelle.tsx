@@ -32,14 +32,13 @@ function Navicelle() {
             if (data){
                 setSpaceData(data);
             }
-            
+            setTimeout(() => {
+                setIsLoading(false)
+            }, 5000);
         }
         loadData()
     },[])
 
-    setTimeout(() => {
-        setIsLoading(false)
-      }, 5000);
 
     return(
         <div className="container">

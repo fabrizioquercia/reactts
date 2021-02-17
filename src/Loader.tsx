@@ -10,10 +10,11 @@ type LoaderTypes = {
 function Loader(tipi:LoaderTypes) {
     return (
         <p >
-            <Alert className="btn-info">
+            <Alert className="alert-info">
                 <em>Aspetta n'attimo che sto a caricà la pippa eh...<br />te faccio girà le palle 5 secondi!</em>
             </Alert>
-            <FontAwesomeIcon icon={faCircleNotch} className="fa-spin fa-1x" />&nbsp;&nbsp;<em>{tipi?.message}</em>
+            <FontAwesomeIcon icon={faCircleNotch} className="fa-spin fa-1x" />
+            <FontAwesomeIcon icon={faCircleNotch} className="fa-spin fa-1x" />&nbsp;&nbsp;{tipi?.message}
         </p>
     ) 
 };
